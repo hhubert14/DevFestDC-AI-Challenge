@@ -5,6 +5,7 @@ __pycache__/
 
 # Env files (secrets)
 .env
+keys/
 
 # OS / IDE junk
 .DS_Store
