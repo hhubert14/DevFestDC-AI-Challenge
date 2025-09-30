@@ -1,0 +1,14 @@
+# Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# Env files (secrets)
+.env
+keys/
+
+# OS / IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
