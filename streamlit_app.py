@@ -11,6 +11,17 @@ import google.generativeai as genai
 
 from image_generation_VertexAI import generate_ad_image
 
+from pydantic import BaseModel, ValidationError
+from typing import List, Dict
+
+class AdsSchema(BaseModel):
+    Facebook: List[str]
+    Google: List[str]
+    TikTok: List[str]
+
+
+
+
 # ---------------------------
 # Setup
 # ---------------------------
@@ -79,14 +90,16 @@ Return ONLY valid minified JSON in this exact schema:
 """
     resp = gemini.generate_content(prompt)
     raw = _strip_code_fences(resp.text or "")
+
+    # Implementing the structure validation with pydantic
     try:
-        parsed = json.loads(raw)
-        # minimal validation
-        for key in ["Facebook", "Google", "TikTok"]:
-            _ = parsed.get(key) or []
-        return parsed, ""
-    except Exception as e:
-        return {}, f"Gemini JSON parse error: {e}\nRaw:\n{raw}"
+        parsed = AdsSchema.parse_raw(raw)
+        return parsed.dict(), None
+    except ValidationError as e:
+        return None, f"❌ Schema validation error: {e}\nRaw output:\n{raw}"
+    except json.JSONDecodeError as e:
+        return None, f"❌ JSON parsing error: {e}\nRaw output:\n{raw}"
+
 
 
 def visual_prompt_from_ad(ad_text: str, product: str, audience: str, goal: str, platform: str) -> str:
