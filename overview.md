@@ -19,8 +19,8 @@ The process is iterative but not an infinite loop; it is a human-in-the-loop sys
 Our solution is composed of a team of six specialized AI agents, each with a distinct role:
 
 1.  **Coordinator Agent 🧠:** The orchestrator and project manager. It directs the workflow, manages state, and delegates tasks to the other agents.
-2.  **Text Generator Agent ✍️:** The prompt engineering strategist. It acts as an expert copywriter by translating the high-level creative brief into multiple, distinct prompts to generate a wide variety of strategic ad copy (headlines, body text, CTAs).
-3.  **Image Generator Agent 🎨:** The visual prompt engineer. It acts as a creative director by translating the campaign's goals into multiple, descriptive prompts to generate a wide range of raw images in different styles (e.g., lifestyle, product-focused).
+2.  **Text Generator Agent ✍️:** The expert copywriter. It generates multiple variations of ad copy (headlines, body text, CTAs) based on the creative brief.
+3.  **Image Generator Agent 🎨:** The creative artist. It produces a variety of base visual concepts and raw images that align with the campaign's goals.
 4.  **Ad Composer Agent ✂️:** The graphic designer. It takes the raw text and images and intelligently combines them, handling resizing, formatting, and text placement to create complete, platform-ready ad creatives.
 5.  **Evaluator Agent 🧐:** The pre-launch quality assurance expert. It performs a qualitative analysis of the composed ads, scoring them on criteria like clarity, engagement, and alignment with the brief.
 6.  **Analytics Agent 📊:** The post-launch data analyst. It ingests and interprets quantitative performance data (mocked for the hackathon) to identify winning creatives and provide actionable insights for future iterations.
