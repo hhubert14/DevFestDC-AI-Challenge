@@ -16,8 +16,6 @@ def generate_ad_image(prompt: str) -> str:
     if not response.images or len(response.images) == 0:
         raise ValueError("No images generated.")
 
-    # print("Response:", response.images[0])
-
     img = response.images[0]
     
     # Create images directory if it doesn't exist
@@ -27,9 +25,6 @@ def generate_ad_image(prompt: str) -> str:
     # Save to images folder
     filepath = os.path.join(images_dir, "image.png")
     img.save(filepath)
-
-    # abs_path = os.path.abspath(filepath)
-    # return f"file://{abs_path}"
 
 
 # --- PLATFORM TOOLS ---
@@ -124,10 +119,5 @@ image_generator_agent = Agent(
     name="image_generator_agent",
     model="gemini-2.5-flash",
     description="Generates ad images for various platforms based on product details.",
-    # instruction=(
-    #     "Always return exactly:\n"
-    #     "- Image Prompt: Detailed visual description.\n"
-    #     "- Image: Clickable file:// link to generated PNG.\n"
-    # ),
     tools=[generate_ad_image],
 )
