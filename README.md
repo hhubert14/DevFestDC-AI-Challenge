@@ -6,6 +6,12 @@ A multi-agent AI system for automated digital ad creative generation using Googl
 
 This project creates an AI-powered system that automates the creation of digital ad creatives by orchestrating multiple specialized agents. The system takes a product description and target audience as input and generates both ad copy and visual creatives for different platforms.
 
+## Example
+### ADK UI
+![Screenshot of the application](Screenshot%202025-10-03%20144536.png)
+
+### Ad
+![Generated advertisement example](generated_ad.png)
 ## 🏗️ Architecture
 
 The project uses a **hybrid approach** combining:
