@@ -168,10 +168,6 @@ The system generates:
 
 This project was developed for the DevFest DC AI Challenge. Feel free to fork and extend the functionality!
 
-## 📄 License
-
-MIT License - see LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - DevFest DC organizers for the AI Challenge
