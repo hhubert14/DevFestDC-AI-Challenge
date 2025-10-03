@@ -67,6 +67,7 @@ cd DevFestDC-AI-Challenge
 2. Install dependencies:
 ```bash
 pip install google-adk
+pip install streamlit
 ```
 
 3. Set up environment variables in `.env`:
