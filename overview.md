@@ -1,3 +1,5 @@
+> **Note:** This document represents the original project plan and architecture. The actual implementation may have evolved during development. Please refer to the current codebase and documentation for the final system design.
+
 # Project Overview: Dynamic Ad Creative Generation Agent
 
 ## Project Mission

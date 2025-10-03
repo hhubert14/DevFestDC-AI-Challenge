@@ -1,4 +1,4 @@
-# Technical Plan: Dynamic Ad Creative Agent
+> **Note:** This document represents the original project plan and architecture. The actual implementation may have evolved during development. Please refer to the current codebase and documentation for the final system design.# Technical Plan: Dynamic Ad Creative Agent
 
 This document outlines the technical plan for building the multi-agent ad generation system.
 
