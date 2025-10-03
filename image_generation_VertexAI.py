@@ -5,6 +5,8 @@ from typing import Tuple, Optional
 
 import vertexai
 from vertexai.vision_models import ImageGenerationModel
+from dotenv import load_dotenv
+load_dotenv()
 
 
 _PROJECT = os.getenv("GCP_PROJECT_ID")
