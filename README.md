@@ -12,6 +12,16 @@ This project creates an AI-powered system that automates the creation of digital
 
 ### Ad
 ![Generated advertisement example](generated_ad.png)
+
+## Examples with our own UI - Streamlit
+### Streamlit UI
+<img width="1838" height="445" alt="Screenshot 2025-10-03 120714" src="https://github.com/user-attachments/assets/b18ed58c-e983-47b7-b11a-8eb5d3f3c572" />
+
+
+### Ad
+<img width="1879" height="895" alt="Screenshot 2025-10-03 120732" src="https://github.com/user-attachments/assets/a2fc7ca0-0ce8-4d0d-8ebd-a33d661f741c" />
+
+
 ## 🏗️ Architecture
 
 The project uses a **hybrid approach** combining:
