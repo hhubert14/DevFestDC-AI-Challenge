@@ -142,7 +142,7 @@ response = root_agent.send_message(
 
 ### ✅ Completed Features
 - Multi-agent system using Google ADK
-- Platform-specific ad copy generation (Facebook, Google, TikTok)
+- Ad copy generation
 - Vertex AI Imagen integration for image generation
 - Platform-aware visual prompt engineering
 - Streamlit web interface
@@ -155,14 +155,6 @@ response = root_agent.send_message(
 - Analytics agent with performance insights
 - Feedback loop for iterative improvement
 - A/B testing capabilities
-
-## 🎨 Sample Output
-
-The system generates:
-- **3 ad copy variations** per platform (Facebook, Google, TikTok)
-- **Platform-optimized images** with appropriate aspect ratios and styling
-- **Complete ad creatives** with text overlays and professional composition
-- **JSON export** of all generated content
 
 ## 🤝 Contributing
 
