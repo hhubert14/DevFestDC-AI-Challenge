@@ -16,7 +16,7 @@ def generate_ad_image(prompt: str) -> str:
     if not response.images or len(response.images) == 0:
         raise ValueError("No images generated.")
 
-    print("Response:", response.images[0])
+    # print("Response:", response.images[0])
 
     img = response.images[0]
     
